@@ -1,534 +1,2119 @@
-
 {
-    "revCodes" : [
-        {"code" : "0001", "description":"Total Charges"},
-        {"code" : "0020", "description":"Health Insurance – Prospective Payment System (PPS)"},
-        {"code" : "0022", "description":"SNF – (PPS)"},
-        {"code" : "0023", "description":"Home Health – PPS"},
-        {"code" : "0024", "description":"Inpatient Rehab Facility – PPS"},
-        {"code" : "0100", "description":"All-inclusive Room & Board & Ancillary"},
-        {"code" : "0101", "description":"All-inclusive room & board"},
-        {"code" : "0110", "description":"Room & Board - Private"},
-        {"code" : "0111", "description":"Medical/surgical/gyn"},
-        {"code" : "0112", "description":"Obstetrics (OB)"},
-        {"code" : "0113", "description":"Pediatric"},
-        {"code" : "0114", "description":"Psychiatric"},
-        {"code" : "0115", "description":"Hospice"},
-        {"code" : "0116", "description":"Detox"},
-        {"code" : "0117", "description":"Oncology"},
-        {"code" : "0118", "description":"Rehab"},
-        {"code" : "0119", "description":"Other"},
-        {"code" : "0120", "description":"Room & Board – Semi-private, 2 Beds"},
-        {"code" : "0121", "description":"Medical/surgical/gyn"},
-        {"code" : "0122", "description":"Obstetrics (OB)"},
-        {"code" : "0123", "description":"Pediatric"},
-        {"code" : "0124", "description":"Psychiatric"},
-        {"code" : "0125", "description":"Hospice"},
-        {"code" : "0126", "description":"Detox"},
-        {"code" : "0127", "description":"Oncology"},
-        {"code" : "0128", "description":"Rehab"},
-        {"code" : "0129", "description":"Other"},
-        {"code" : "0130", "description":"Room & Board – Semi-private, 3-4 Beds"},
-        {"code" : "0131", "description":"Medical/surgical/gyn"},
-        {"code" : "0132", "description":"Obstetrics (OB)"},
-        {"code" : "0133", "description":"Pediatric"},
-        {"code" : "0134", "description":"Psychiatric"},
-        {"code" : "0135", "description":"Hospice"},
-        {"code" : "0136", "description":"Detox"},
-        {"code" : "0137", "description":"Oncology"},
-        {"code" : "0138", "description":"Rehab"},
-        {"code" : "0139", "description":"Other"},
-        {"code" : "0140", "description":"Room & Board – Private (Deluxe)"},
-        {"code" : "0141", "description":"Medical/surgical/gyn"},
-        {"code" : "0142", "description":"Obstetrics (OB)"},
-        {"code" : "0143", "description":"Pediatric"},
-        {"code" : "0144", "description":"Psychiatric"},
-        {"code" : "0145", "description":"Hospice"},
-        {"code" : "0146", "description":"Detox"},
-        {"code" : "0147", "description":"Oncology"},
-        {"code" : "0148", "description":"Rehab"},
-        {"code" : "0149", "description":"Other"},
-        {"code" : "0150", "description":"Room & Board - Ward"},
-        {"code" : "0151", "description":"Medical/surgical/gyn"},
-        {"code" : "0152", "description":"Obstetrics (OB)"},
-        {"code" : "0153", "description":"Pediatric"},
-        {"code" : "0154", "description":"Psychiatric"},
-        {"code" : "0155", "description":"Hospice"},
-        {"code" : "0156", "description":"Detox"},
-        {"code" : "0157", "description":"Oncology"},
-        {"code" : "0158", "description":"Rehab"},
-        {"code" : "0159", "description":"Other"},
-        {"code" : "0160", "description":"Nursery"},
-        {"code" : "0164", "description":"Sterile environment"},
-        {"code" : "0167", "description":"Self care"},
-        {"code" : "0169", "description":"Other"},
-        {"code" : "0170", "description":"Nursery"},
-        {"code" : "0171", "description":"Newborn – Level I"},
-        {"code" : "0172", "description":"Newborn – Level II"},
-        {"code" : "0173", "description":"Newborn – Level III"},
-        {"code" : "0174", "description":"Newborn – Level IV"},
-        {"code" : "0179", "description":"Other"},
-        {"code" : "0180", "description":"Leave of Absence"},
-        {"code" : "0182", "description":"Patient convenience"},
-        {"code" : "0183", "description":"Therapeutic leave"},
-        {"code" : "0185", "description":"Nursing Home (for hospitalization)"},
-        {"code" : "0189", "description":"Other leave of absence"},
-        {"code" : "0190", "description":"Sub-Acute Care"},
-        {"code" : "0191", "description":"Level I"},
-        {"code" : "0192", "description":"Level II"},
-        {"code" : "0193", "description":"Level III"},
-        {"code" : "0194", "description":"Level IV"},
-        {"code" : "0199", "description":"Other sub-acute care"},
-        {"code" : "0200", "description":"Intensive Care"},
-        {"code" : "0201", "description":"Surgical"},
-        {"code" : "0202", "description":"Medical"},
-        {"code" : "0203", "description":"Pediatric"},
-        {"code" : "0204", "description":"Psychiatric"},
-        {"code" : "0206", "description":"Intermediate ICU"},
-        {"code" : "0207", "description":"Burn care"},
-        {"code" : "0208", "description":"Trauma"},
-        {"code" : "0209", "description":"Other"},
-        {"code" : "0210", "description":"Coronary Care"},
-        {"code" : "0211", "description":"Myocardial infarction"},
-        {"code" : "0212", "description":"Pulmonary care"},
-        {"code" : "0213", "description":"Heart transplant"},
-        {"code" : "0214", "description":"Intermediate critical care unit (CCU)"},
-        {"code" : "0219", "description":"Other"},
-        {"code" : "0220", "description":"Special Charges"},
-        {"code" : "0221", "description":"Admission"},
-        {"code" : "0222", "description":"Technical support"},
-        {"code" : "0223", "description":"UR service"},
-        {"code" : "0224", "description":"Late discharge – medically necessary"},
-        {"code" : "0229", "description":"Other"},
-        {"code" : "0230", "description":"Incremental Nursing Charge Rate"},
-        {"code" : "0231", "description":"Nursery"},
-        {"code" : "0232", "description":"Obstetrics (OB)"},
-        {"code" : "0233", "description":"Intensive care unit (ICU)"},
-        {"code" : "0234", "description":"Critical care unit (CCU)"},
-        {"code" : "0235", "description":"Hospice"},
-        {"code" : "0239", "description":"Other"},
-        {"code" : "0240", "description":"All-Inclusive Ancillary – General"},
-        {"code" : "0241", "description":"Basic"},
-        {"code" : "0242", "description":"Comprehensive"},
-        {"code" : "0243", "description":"Specialty"},
-        {"code" : "0249", "description":"Other"},
-        {"code" : "0250", "description":"Pharmacy"},
-        {"code" : "0251", "description":"Generic drugs"},
-        {"code" : "0252", "description":"Non-generic drugs"},
-        {"code" : "0253", "description":"Take home drugs"},
-        {"code" : "0254", "description":"Incident to other diagnostic services"},
-        {"code" : "0255", "description":"Incident to radiology"},
-        {"code" : "0256", "description":"Experimental drugs"},
-        {"code" : "0257", "description":"Non-Rx"},
-        {"code" : "0258", "description":"IV solutions"},
-        {"code" : "0259", "description":"Other"},
-        {"code" : "0260", "description":"IV Therapy"},
-        {"code" : "0261", "description":"Infusion pump"},
-        {"code" : "0262", "description":"IV therapy/pharmacy services"},
-        {"code" : "0263", "description":"IV therapy/drug/supply delivery"},
-        {"code" : "0264", "description":"IV therapy/supplies"},
-        {"code" : "0269", "description":"Other"},
-        {"code" : "0270", "description":"Medical/Surgical Supplies and Devices"},
-        {"code" : "0271", "description":"Non-sterile supplies"},
-        {"code" : "0272", "description":"Sterile supplies"},
-        {"code" : "0273", "description":"Take-home supplies"},
-        {"code" : "0274", "description":"Prosthetic/orthotic devices"},
-        {"code" : "0275", "description":"Pacemaker"},
-        {"code" : "0276", "description":"Intraocular lens"},
-        {"code" : "0277", "description":"Oxygen – take home"},
-        {"code" : "0278", "description":"Other implants"},
-        {"code" : "0279", "description":"Other supplies/devices"},
-        {"code" : "0280", "description":"Oncology"},
-        {"code" : "0289", "description":"Other oncology"},
-        {"code" : "0290", "description":"Durable Medical Equipment (not renal)"},
-        {"code" : "0291", "description":"Rental"},
-        {"code" : "0292", "description":"Purchase – new equipment"},
-        {"code" : "0293", "description":"Purchase – used equipment"},
-        {"code" : "0294", "description":"Supplies/drugs for DME (HHA only)"},
-        {"code" : "0299", "description":"Other equipment"},
-        {"code" : "0300", "description":"Laboratory"},
-        {"code" : "0301", "description":"Chemistry"},
-        {"code" : "0302", "description":"Immunology"},
-        {"code" : "0303", "description":"Renal patient (home)"},
-        {"code" : "0304", "description":"Non-routine dialysis"},
-        {"code" : "0305", "description":"Hematology"},
-        {"code" : "0306", "description":"Bacteriology and microbiology"},
-        {"code" : "0307", "description":"Urology"},
-        {"code" : "0309", "description":"Other"},
-        {"code" : "0310", "description":"Laboratory - Pathology"},
-        {"code" : "0311", "description":"Cytology"},
-        {"code" : "0312", "description":"Histology"},
-        {"code" : "0314", "description":"Biopsy"},
-        {"code" : "0319", "description":"Other"},
-        {"code" : "0320", "description":"Radiology - Diagnostic"},
-        {"code" : "0321", "description":"Angiocardiography"},
-        {"code" : "0323", "description":"Arthrography"},
-        {"code" : "0324", "description":"Arteriography"},
-        {"code" : "0324", "description":"Chest X-ray"},
-        {"code" : "0329", "description":"Other"},
-        {"code" : "0330", "description":"Radiology - Therapeutic and/or Chemotherapy Administration"},
-        {"code" : "0331", "description":"Chemotherapy – injected"},
-        {"code" : "0332", "description":"Chemotherapy – oral"},
-        {"code" : "0333", "description":"Radiation therapy"},
-        {"code" : "0335", "description":"Chemotherapy – IV"},
-        {"code" : "0339", "description":"Other"},
-        {"code" : "0340", "description":"Nuclear Medicine"},
-        {"code" : "0341", "description":"Diagnostic"},
-        {"code" : "0342", "description":"Therapeutic"},
-        {"code" : "0343", "description":"Diagnostic radiopharmaceuticals"},
-        {"code" : "0344", "description":"Therapeutic radiopharmaceuticals"},
-        {"code" : "0349", "description":"Other"},
-        {"code" : "0350", "description":"Computerized Tomography (CT Scan)"},
-        {"code" : "0351", "description":"Head scan"},
-        {"code" : "0352", "description":"Body scan"},
-        {"code" : "0359", "description":"Other CT scans"},
-        {"code" : "0350", "description":"Computerized Tomography (CT Scan)"},
-        {"code" : "0351", "description":"Head scan"},
-        {"code" : "0352", "description":"Body scan"},
-        {"code" : "0359", "description":"Other CT scans"},
-        {"code" : "0360", "description":"Operating Room Services"},
-        {"code" : "0361", "description":"Minor surgery"},
-        {"code" : "0362", "description":"Organ transplant", "description":" not kidney"},
-        {"code" : "0367", "description":"Kidney transplant"},
-        {"code" : "0369", "description":"Other"},
-        {"code" : "0370", "description":"Anesthesia"},
-        {"code" : "0371", "description":"Incident to radiology"},
-        {"code" : "0372", "description":"Incident to other diagnostic services"},
-        {"code" : "0374", "description":"Acupuncture"},
-        {"code" : "0379", "description":"Other"},
-        {"code" : "0380", "description":"Blood"},
-        {"code" : "0381", "description":"Packed red cells"},
-        {"code" : "0382", "description":"Whole blood"},
-        {"code" : "0383", "description":"Plasma"},
-        {"code" : "0384", "description":"Platelets"},
-        {"code" : "0385", "description":"Leukocytes"},
-        {"code" : "0386", "description":"Other components"},
-        {"code" : "0387", "description":"Other derivatives (cryoprecipitates)"},
-        {"code" : "0389", "description":"Other"},
-        {"code" : "0390", "description":"Blood Storage/Processing"},
-        {"code" : "0391", "description":"Blood administration"},
-        {"code" : "0392", "description":"Processing and storage"},
-        {"code" : "0399", "description":"Other blood handling"},
-        {"code" : "0400", "description":"Other Imaging Services"},
-        {"code" : "0401", "description":"Diagnostic mammography"},
-        {"code" : "0402", "description":"Ultrasound"},
-        {"code" : "0403", "description":"Screening mammography"},
-        {"code" : "0404", "description":"Positron emission tomography (PET scan)"},
-        {"code" : "0409", "description":"Other imaging services"},
-        {"code" : "0410", "description":"Respiratory Services"},
-        {"code" : "0412", "description":"Inhalation therapy"},
-        {"code" : "0413", "description":"Hyperbaric oxygen therapy"},
-        {"code" : "0419", "description":"Other"},
-        {"code" : "0420", "description":"Physical Therapy"},
-        {"code" : "0421", "description":"Visit charge"},
-        {"code" : "0422", "description":"Hourly charge"},
-        {"code" : "0423", "description":"Group rate"},
-        {"code" : "0424", "description":"Evaluation or re-evaluation"},
-        {"code" : "0429", "description":"Other"},
-        {"code" : "0430", "description":"Occupational Therapy"},
-        {"code" : "0431", "description":"Visit charge"},
-        {"code" : "0432", "description":"Hourly charge"},
-        {"code" : "0433", "description":"Group rate"},
-        {"code" : "0434", "description":"Evaluation or re-evaluation"},
-        {"code" : "0439", "description":"Other"},
-        {"code" : "0440", "description":"Speech Therapy – Language Pathology"},
-        {"code" : "0441", "description":"Visit charge"},
-        {"code" : "0442", "description":"Hourly charge"},
-        {"code" : "0443", "description":"Group rate"},
-        {"code" : "0444", "description":"Evaluation or re-evaluation"},
-        {"code" : "0449", "description":"Other"},
-        {"code" : "0450", "description":"Emergency Room (ER)"},
-        {"code" : "0451", "description":"EMTALA emergency medical screening"},
-        {"code" : "0452", "description":"ER beyond EMTALA screening"},
-        {"code" : "0456", "description":"Urgent Care"},
-        {"code" : "0459", "description":"Other emergency room"},
-        {"code" : "0460", "description":"Pulmonary Function"},
-        {"code" : "0469", "description":"Other pulmonary function"},
-        {"code" : "0470", "description":"Audiology"},
-        {"code" : "0471", "description":"Diagnostic"},
-        {"code" : "0472", "description":"Treatment"},
-        {"code" : "0479", "description":"Other"},
-        {"code" : "0480", "description":"Cardiology"},
-        {"code" : "0481", "description":"Cardiac catheter lab"},
-        {"code" : "0482", "description":"Stress test"},
-        {"code" : "0483", "description":"Echocardiography"},
-        {"code" : "0489", "description":"Other"},
-        {"code" : "0490", "description":"Ambulatory Surgical Care"},
-        {"code" : "0499", "description":"Other"},
-        {"code" : "0500", "description":"Outpatient Services"},
-        {"code" : "0509", "description":"Other"},
-        {"code" : "0510", "description":"Clinic"},
-        {"code" : "0511", "description":"Chronic pain center"},
-        {"code" : "0512", "description":"Dental clinic"},
-        {"code" : "0513", "description":"Psychiatric clinic"},
-        {"code" : "0514", "description":"OB/Gyn clinic"},
-        {"code" : "0515", "description":"Pediatric clinic"},
-        {"code" : "0516", "description":"Urgent care clinic"},
-        {"code" : "0517", "description":"Family practice clinic"},
-        {"code" : "0519", "description":"Other clinic"},
-        {"code" : "0520", "description":"Free-Standing Clinic"},
-        {"code" : "0521", "description":"Rural health clinic"},
-        {"code" : "0522", "description":"Rural health – home"},
-        {"code" : "0523", "description":"Family practice clinic"},
-        {"code" : "0524", "description":"Rural Health Family Clinic"},
-        {"code" : "0525", "description":"Rural Health – other residential facility"},
-        {"code" : "0526", "description":"Urgent care clinic"},
-        {"code" : "0527", "description":"Rural Health – visiting nurse"},
-        {"code" : "0528", "description":"Rural Health – other site"},
-        {"code" : "0529", "description":"Other freestanding clinic"},
-        {"code" : "0530", "description":"Osteopathic Services"},
-        {"code" : "0531", "description":"Osteopathic therapy"},
-        {"code" : "0539", "description":"Other"},
-        {"code" : "0540", "description":"Ambulance"},
-        {"code" : "0541", "description":"Supplies"},
-        {"code" : "0542", "description":"Medical transport"},
-        {"code" : "0543", "description":"Heart mobile"},
-        {"code" : "0544", "description":"Oxygen"},
-        {"code" : "0545", "description":"Air ambulance"},
-        {"code" : "0546", "description":"Neonatal ambulance services"},
-        {"code" : "0547", "description":"Pharmacy"},
-        {"code" : "0548", "description":"Telephone transmission EKG"},
-        {"code" : "0549", "description":"Other (ALS)"},
-        {"code" : "0550", "description":"Skilled Nursing"},
-        {"code" : "0551", "description":"Visit charge"},
-        {"code" : "0552", "description":"Hourly charge"},
-        {"code" : "0559", "description":"Other"},
-        {"code" : "0560", "description":"Home Health - Medical Social Services"},
-        {"code" : "0561", "description":"Visit charge"},
-        {"code" : "0562", "description":"Hourly charge"},
-        {"code" : "0569", "description":"Other"},
-        {"code" : "0570", "description":"Home Health Aide"},
-        {"code" : "0571", "description":"Visit charge"},
-        {"code" : "0572", "description":"Hourly charge"},
-        {"code" : "0579", "description":"Other"},
-        {"code" : "0580", "description":"Other Visits (Home Health)"},
-        {"code" : "0581", "description":"Visit charge"},
-        {"code" : "0582", "description":"Hourly charge"},
-        {"code" : "0589", "description":"Other"},
-        {"code" : "0590", "description":"Units of Service (Home Health)"},
-        {"code" : "0600", "description":"Oxygen (Home Health)"},
-        {"code" : "0601", "description":"Oxygen – state/equip/suppt/or cont"},
-        {"code" : "0602", "description":"Oxygen – state/equip/under 1 LPM"},
-        {"code" : "0603", "description":"Oxygen – state/equip/over 4 LPM"},
-        {"code" : "0604", "description":"Oxygen – portable add-on"},
-        {"code" : "0609", "description":"Other"},
-        {"code" : "0610", "description":"Magnetic Resonance Imaging (MRI)"},
-        {"code" : "0611", "description":"MRI brain (including brain stem)"},
-        {"code" : "0612", "description":"MRI spinal cord (including spine)"},
-        {"code" : "0614", "description":"MRI – other"},
-        {"code" : "0615", "description":"MRA – head and neck"},
-        {"code" : "0616", "description":"MRA – lower extremities"},
-        {"code" : "0618", "description":"MRA – other"},
-        {"code" : "0619", "description":"Other"},
-        {"code" : "0620", "description":"Medical/Surgical Supplies - Extension of 270"},
-        {"code" : "0621", "description":"Supplies incident to radiology"},
-        {"code" : "0622", "description":"Supplies incident to other diagnostic services"},
-        {"code" : "0623", "description":"Surgical dressings"},
-        {"code" : "0624", "description":"FDA investigational devices"},
-        {"code" : "0630", "description":"Drugs Requiring Specification Identification"},
-        {"code" : "0631", "description":"Single source drug"},
-        {"code" : "0632", "description":"Multiple source drug"},
-        {"code" : "0633", "description":"Restrictive prescription"},
-        {"code" : "0634", "description":"Erythropoietin (EPO) less than 10,000 units"},
-        {"code" : "0635", "description":"Erythropoietin (EPO) greater than 10,000 units"},
-        {"code" : "0636", "description":"Drugs requiring detailed coding"},
-        {"code" : "0637", "description":"Self-administrable drugs"},
-        {"code" : "0640", "description":"Home IV Therapy Services"},
-        {"code" : "0641", "description":"Non-routine nursing/central line"},
-        {"code" : "0642", "description":"IV site care, central line"},
-        {"code" : "0643", "description":"IV start/care/peripheral line"},
-        {"code" : "0644", "description":"Non-routine nursing/peripheral line"},
-        {"code" : "0645", "description":"Training patient/caregiver/central line"},
-        {"code" : "0646", "description":"Training disabled patient/central line"},
-        {"code" : "0647", "description":"Training patient/caregiver/peripheral line"},
-        {"code" : "0648", "description":"Training disabled patient/peripheral line"},
-        {"code" : "0649", "description":"Other"},
-        {"code" : "0650", "description":"Hospice"},
-        {"code" : "0651", "description":"Routine home care"},
-        {"code" : "0652", "description":"Continuous home care"},
-        {"code" : "0655", "description":"Inpatient respite care"},
-        {"code" : "0656", "description":"General inpatient care (non-respite)"},
-        {"code" : "0657", "description":"Physician services"},
-        {"code" : "0658", "description":"Hospice R&B Nursing Facility"},
-        {"code" : "0659", "description":"Other"},
-        {"code" : "0660", "description":"General Respite Care (Home Health Only)"},
-        {"code" : "0661", "description":"Hourly charge/skilled nursing"},
-        {"code" : "0662", "description":"Hourly charge/home health aide/homemaker/companion"},
-        {"code" : "0633", "description":"Daily Respite Charge"},
-        {"code" : "0669", "description":"Other Respite"},
-        {"code" : "0670", "description":"Outpatient Special Residence Charges"},
-        {"code" : "0671", "description":"Hospital owned"},
-        {"code" : "0672", "description":"Contracted"},
-        {"code" : "0679", "description":"Other special residence charges"},
-        {"code" : "0680", "description":"Trauma Response"},
-        {"code" : "0681", "description":"Level I Trauma"},
-        {"code" : "0682", "description":"Level II Trauma"},
-        {"code" : "0683", "description":"Level III Trauma"},
-        {"code" : "0684", "description":"Level IV Trauma"},
-        {"code" : "0689", "description":"Other"},
-        {"code" : "0700", "description":"Cast Room"},
-        {"code" : "0710", "description":"Recovery Room"},
-        {"code" : "0720", "description":"Labor Room/Delivery"},
-        {"code" : "0721", "description":"Labor"},
-        {"code" : "0722", "description":"Delivery"},
-        {"code" : "0723", "description":"Circumcision"},
-        {"code" : "0724", "description":"Birthing center"},
-        {"code" : "0729", "description":"Other"},
-        {"code" : "0730", "description":"EKG/ECG (Electrocardiogram)"},
-        {"code" : "0731", "description":"Holter monitor"},
-        {"code" : "0732", "description":"Telemetry"},
-        {"code" : "0739", "description":"Other"},
-        {"code" : "0740", "description":"EEG (Electroencephalogram)"},
-        {"code" : "0750", "description":"Gastrointestinal"},
-        {"code" : "0760", "description":"Treatment or Observation Room"},
-        {"code" : "0761", "description":"Treatment room"},
-        {"code" : "0762", "description":"Observation room"},
-        {"code" : "0769", "description":"Other specialty rooms"},
-        {"code" : "0770", "description":"Preventive Care Services"},
-        {"code" : "0771", "description":"Vaccine administration"},
-        {"code" : "0780", "description":"Telemedicine"},
-        {"code" : "0790", "description":"Extra-Corporeal Shock Wave Therapy"},
-        {"code" : "0800", "description":"Inpatient Renal Dialysis"},
-        {"code" : "0801", "description":"Hemodialysis"},
-        {"code" : "0802", "description":"Peritoneal dialysis (non-CAPD)"},
-        {"code" : "0803", "description":"Continuous ambulatory peritoneal dialysis (CAPD)"},
-        {"code" : "0804", "description":"Continuous cycling peritoneal dialysis (CCPD)"},
-        {"code" : "0809", "description":"Other"},
-        {"code" : "0810", "description":"Organ Acquisition"},
-        {"code" : "0811", "description":"Living donor"},
-        {"code" : "0812", "description":"Cadaver donor"},
-        {"code" : "0813", "description":"Unknown donor"},
-        {"code" : "0814", "description":"Unsuccessful organ search – donor bank charges"},
-        {"code" : "0819", "description":"Other donor"},
-        {"code" : "0820", "description":"Hemodialysis Outpatient or Home"},
-        {"code" : "0821", "description":"Hemodialysis – composite or other rate"},
-        {"code" : "0822", "description":"Home supplies"},
-        {"code" : "0823", "description":"Home equipment"},
-        {"code" : "0824", "description":"Maintenance – 100%"},
-        {"code" : "0825", "description":"Support services"},
-        {"code" : "0829", "description":"Other"},
-        {"code" : "0830", "description":"Peritoneal Dialysis Outpatient or Home"},
-        {"code" : "0831", "description":"Peritoneal dialysis – composite or other rate"},
-        {"code" : "0832", "description":"Home supplies"},
-        {"code" : "0833", "description":"Home equipment"},
-        {"code" : "0834", "description":"Maintenance – 100%"},
-        {"code" : "0835", "description":"Support services"},
-        {"code" : "0839", "description":"Other"},
-        {"code" : "0840", "description":"CAPD (Dialysis) Outpatient or Home"},
-        {"code" : "0841", "description":"CAPD - composite or other rate"},
-        {"code" : "0842", "description":"Home supplies"},
-        {"code" : "0843", "description":"Home equipment"},
-        {"code" : "0844", "description":"Maintenance – 100%"},
-        {"code" : "0845", "description":"Support services"},
-        {"code" : "0849", "description":"Other"},
-        {"code" : "0850", "description":"CCPD (Dialysis) Outpatient or Home"},
-        {"code" : "0851", "description":"CCPD – composite or other rate"},
-        {"code" : "0852", "description":"Home supplies"},
-        {"code" : "0853", "description":"Home equipment"},
-        {"code" : "0854", "description":"Maintenance – 100%"},
-        {"code" : "0855", "description":"Support services"},
-        {"code" : "0859", "description":"Other"},
-        {"code" : "0880", "description":"Miscellaneous Dialysis"},
-        {"code" : "0881", "description":"Ultra-filtration"},
-        {"code" : "0882", "description":"Home dialysis aid visit"},
-        {"code" : "0889", "description":"Other"},
-        {"code" : "0900", "description":"Behavioral Health Treatment"},
-        {"code" : "0901", "description":"Electroshock treatment"},
-        {"code" : "0902", "description":"Milieu therapy"},
-        {"code" : "0903", "description":"Play therapy"},
-        {"code" : "0904", "description":"Activity therapy"},
-        {"code" : "0905", "description":"Intensive outpatient services – psychiatric"},
-        {"code" : "0906", "description":"Intensive outpatient services – chemical dependency"},
-        {"code" : "0907", "description":"Community Behavioral Health Program (Day Treatment"},
-        {"code" : "0910", "description":"Behavioral Health Treatment - Reserved"},
-        {"code" : "0911", "description":"Rehabilitation"},
-        {"code" : "0912", "description":"Partial hospitalization – less intensive"},
-        {"code" : "0913", "description":"Partial hospitalization – intensive"},
-        {"code" : "0914", "description":"Individual therapy"},
-        {"code" : "0915", "description":"Group therapy"},
-        {"code" : "0916", "description":"Family therapy"},
-        {"code" : "0917", "description":"Biofeedback"},
-        {"code" : "0918", "description":"Testing"},
-        {"code" : "0919", "description":"Other"},
-        {"code" : "0920", "description":"Other Diagnostic Services"},
-        {"code" : "0921", "description":"Peripheral vascular lab"},
-        {"code" : "0922", "description":"Electromyelgram"},
-        {"code" : "0923", "description":"Pap smear"},
-        {"code" : "0924", "description":"Allergy test"},
-        {"code" : "0925", "description":"Pregnancy test"},
-        {"code" : "0929", "description":"Other diagnostic service"},
-        {"code" : "0930", "description":"Medical rehab day program-Reserved"},
-        {"code" : "0931", "description":"Medical rehab day program – half-day"},
-        {"code" : "0932", "description":"Medical rehab day program – full-day"},
-        {"code" : "0940", "description":"Other Therapeutic Services"},
-        {"code" : "0941", "description":"Recreational therapy"},
-        {"code" : "0942", "description":"Education/training"},
-        {"code" : "0943", "description":"Cardiac rehabilitation"},
-        {"code" : "0944", "description":"Drug rehabilitation"},
-        {"code" : "0945", "description":"Alcohol rehabilitation"},
-        {"code" : "0946", "description":"Complex medical equipment – routine"},
-        {"code" : "0947", "description":"Complex medical equipment – ancillary"},
-        {"code" : "0948", "description":"Pulmonary rehab"},
-        {"code" : "0949", "description":"Other therapeutic services"},
-        {"code" : "0950", "description":"Other therapeutic services – reserved"},
-        {"code" : "0951", "description":"Athletic training"},
-        {"code" : "0952", "description":"Kinesiotherapy"},
-        {"code" : "0960", "description":"Professional Fees"},
-        {"code" : "0961", "description":"Psychiatric"},
-        {"code" : "0962", "description":"Ophthalmology"},
-        {"code" : "0963", "description":"Anesthesia – MD"},
-        {"code" : "0970", "description":"Professional Fees - Reserved"},
-        {"code" : "0971", "description":"Laboratory"},
-        {"code" : "0972", "description":"Radiology – diagnostic"},
-        {"code" : "0973", "description":"Radiology – therapeutic"},
-        {"code" : "0974", "description":"Radiology – nuclear medicine"},
-        {"code" : "0975", "description":"Operating room"},
-        {"code" : "0976", "description":"Respiratory therapy"},
-        {"code" : "0977", "description":"Physical therapy"},
-        {"code" : "0978", "description":"Occupational therapy"},
-        {"code" : "0979", "description":"Speech therapy"},
-        {"code" : "0980", "description":"Professional Fees - Reserved"},
-        {"code" : "0981", "description":"Emergency room"},
-        {"code" : "0982", "description":"OPD"},
-        {"code" : "0983", "description":"Clinic"},
-        {"code" : "0984", "description":"Medical/social services"},
-        {"code" : "0985", "description":"Electrocardiogram (EKG)"},
-        {"code" : "0986", "description":"Electroencephalogram (EEG)"},
-        {"code" : "0987", "description":"Hospital visit"},
-        {"code" : "0988", "description":"Consultation"},
-        {"code" : "0989", "description":"Private duty nurse"},
-        {"code" : "0990", "description":"Patient Convenience Items"},
-        {"code" : "0991", "description":"Cafeteria/guest tray"},
-        {"code" : "0992", "description":"Private linen services"},
-        {"code" : "0993", "description":"Telephone/telegraph"},
-        {"code" : "0994", "description":"TV/radio"},
-        {"code" : "0995", "description":"Nonpatient room rentals"},
-        {"code" : "0996", "description":"Late discharge charge"},
-        {"code" : "0997", "description":"Admission kits"},
-        {"code" : "0998", "description":"Beauty shop/barber"},
-        {"code" : "0999", "description":"Other"},
-        {"code" : "1000", "description":"Behavioral Health Accommodations"},
-        {"code" : "1001", "description":"Residential treatment – psychiatric"},
-        {"code" : "1002", "description":"Residential treatment – chemical dependency"},
-        {"code" : "1003", "description":"Supervised living"},
-        {"code" : "1004", "description":"Halfway house"},
-        {"code" : "1005", "description":"Group home"},
-        {"code" : "2100", "description":"Alternative Therapy Services"},
-        {"code" : "2101", "description":"Acupuncture"},
-        {"code" : "2102", "description":"Acupressure"},
-        {"code" : "2103", "description":"Massage"},
-        {"code" : "2104", "description":"Reflexology"},
-        {"code" : "2105", "description":"Biofeedback"},
-        {"code" : "2106", "description":"Hypnosis"},
-        {"code" : "2109", "description":"Other alternative therapy services"},
-        {"code" : "3100", "description":"Adult Day Care - Reserved"},
-        {"code" : "3101", "description":"Adult day care medical social – hourly"},
-        {"code" : "3102", "description":"Adult day care social – hourly"},
-        {"code" : "3103", "description":"Adult day care medical social – daily"},
-        {"code" : "3104", "description":"Adult daycare social – daily"},
-        {"code" : "3105", "description":"Adult foster care – daily"},
-        {"code" : "3109", "description":"Other adult care"},
-        {"code" : "0964", "description":"Anesthesia – CRNA"},
-        {"code" : "0969", "description":"Other"}
-    ]
+  "0001": {
+    "code": "0001",
+    "description": "Total Charges"
+  },
+  "0020": {
+    "code": "0020",
+    "description": "Health Insurance – Prospective Payment System (PPS)"
+  },
+  "0022": {
+    "code": "0022",
+    "description": "SNF – (PPS)"
+  },
+  "0023": {
+    "code": "0023",
+    "description": "Home Health – PPS"
+  },
+  "0024": {
+    "code": "0024",
+    "description": "Inpatient Rehab Facility – PPS"
+  },
+  "0100": {
+    "code": "0100",
+    "description": "All-inclusive Room & Board & Ancillary"
+  },
+  "0101": {
+    "code": "0101",
+    "description": "All-inclusive room & board"
+  },
+  "0110": {
+    "code": "0110",
+    "description": "Room & Board - Private"
+  },
+  "0111": {
+    "code": "0111",
+    "description": "Medical/surgical/gyn"
+  },
+  "0112": {
+    "code": "0112",
+    "description": "Obstetrics (OB)"
+  },
+  "0113": {
+    "code": "0113",
+    "description": "Pediatric"
+  },
+  "0114": {
+    "code": "0114",
+    "description": "Psychiatric"
+  },
+  "0115": {
+    "code": "0115",
+    "description": "Hospice"
+  },
+  "0116": {
+    "code": "0116",
+    "description": "Detox"
+  },
+  "0117": {
+    "code": "0117",
+    "description": "Oncology"
+  },
+  "0118": {
+    "code": "0118",
+    "description": "Rehab"
+  },
+  "0119": {
+    "code": "0119",
+    "description": "Other"
+  },
+  "0120": {
+    "code": "0120",
+    "description": "Room & Board – Semi-private, 2 Beds"
+  },
+  "0121": {
+    "code": "0121",
+    "description": "Medical/surgical/gyn"
+  },
+  "0122": {
+    "code": "0122",
+    "description": "Obstetrics (OB)"
+  },
+  "0123": {
+    "code": "0123",
+    "description": "Pediatric"
+  },
+  "0124": {
+    "code": "0124",
+    "description": "Psychiatric"
+  },
+  "0125": {
+    "code": "0125",
+    "description": "Hospice"
+  },
+  "0126": {
+    "code": "0126",
+    "description": "Detox"
+  },
+  "0127": {
+    "code": "0127",
+    "description": "Oncology"
+  },
+  "0128": {
+    "code": "0128",
+    "description": "Rehab"
+  },
+  "0129": {
+    "code": "0129",
+    "description": "Other"
+  },
+  "0130": {
+    "code": "0130",
+    "description": "Room & Board – Semi-private, 3-4 Beds"
+  },
+  "0131": {
+    "code": "0131",
+    "description": "Medical/surgical/gyn"
+  },
+  "0132": {
+    "code": "0132",
+    "description": "Obstetrics (OB)"
+  },
+  "0133": {
+    "code": "0133",
+    "description": "Pediatric"
+  },
+  "0134": {
+    "code": "0134",
+    "description": "Psychiatric"
+  },
+  "0135": {
+    "code": "0135",
+    "description": "Hospice"
+  },
+  "0136": {
+    "code": "0136",
+    "description": "Detox"
+  },
+  "0137": {
+    "code": "0137",
+    "description": "Oncology"
+  },
+  "0138": {
+    "code": "0138",
+    "description": "Rehab"
+  },
+  "0139": {
+    "code": "0139",
+    "description": "Other"
+  },
+  "0140": {
+    "code": "0140",
+    "description": "Room & Board – Private (Deluxe)"
+  },
+  "0141": {
+    "code": "0141",
+    "description": "Medical/surgical/gyn"
+  },
+  "0142": {
+    "code": "0142",
+    "description": "Obstetrics (OB)"
+  },
+  "0143": {
+    "code": "0143",
+    "description": "Pediatric"
+  },
+  "0144": {
+    "code": "0144",
+    "description": "Psychiatric"
+  },
+  "0145": {
+    "code": "0145",
+    "description": "Hospice"
+  },
+  "0146": {
+    "code": "0146",
+    "description": "Detox"
+  },
+  "0147": {
+    "code": "0147",
+    "description": "Oncology"
+  },
+  "0148": {
+    "code": "0148",
+    "description": "Rehab"
+  },
+  "0149": {
+    "code": "0149",
+    "description": "Other"
+  },
+  "0150": {
+    "code": "0150",
+    "description": "Room & Board - Ward"
+  },
+  "0151": {
+    "code": "0151",
+    "description": "Medical/surgical/gyn"
+  },
+  "0152": {
+    "code": "0152",
+    "description": "Obstetrics (OB)"
+  },
+  "0153": {
+    "code": "0153",
+    "description": "Pediatric"
+  },
+  "0154": {
+    "code": "0154",
+    "description": "Psychiatric"
+  },
+  "0155": {
+    "code": "0155",
+    "description": "Hospice"
+  },
+  "0156": {
+    "code": "0156",
+    "description": "Detox"
+  },
+  "0157": {
+    "code": "0157",
+    "description": "Oncology"
+  },
+  "0158": {
+    "code": "0158",
+    "description": "Rehab"
+  },
+  "0159": {
+    "code": "0159",
+    "description": "Other"
+  },
+  "0160": {
+    "code": "0160",
+    "description": "Nursery"
+  },
+  "0164": {
+    "code": "0164",
+    "description": "Sterile environment"
+  },
+  "0167": {
+    "code": "0167",
+    "description": "Self care"
+  },
+  "0169": {
+    "code": "0169",
+    "description": "Other"
+  },
+  "0170": {
+    "code": "0170",
+    "description": "Nursery"
+  },
+  "0171": {
+    "code": "0171",
+    "description": "Newborn – Level I"
+  },
+  "0172": {
+    "code": "0172",
+    "description": "Newborn – Level II"
+  },
+  "0173": {
+    "code": "0173",
+    "description": "Newborn – Level III"
+  },
+  "0174": {
+    "code": "0174",
+    "description": "Newborn – Level IV"
+  },
+  "0179": {
+    "code": "0179",
+    "description": "Other"
+  },
+  "0180": {
+    "code": "0180",
+    "description": "Leave of Absence"
+  },
+  "0182": {
+    "code": "0182",
+    "description": "Patient convenience"
+  },
+  "0183": {
+    "code": "0183",
+    "description": "Therapeutic leave"
+  },
+  "0185": {
+    "code": "0185",
+    "description": "Nursing Home (for hospitalization)"
+  },
+  "0189": {
+    "code": "0189",
+    "description": "Other leave of absence"
+  },
+  "0190": {
+    "code": "0190",
+    "description": "Sub-Acute Care"
+  },
+  "0191": {
+    "code": "0191",
+    "description": "Level I"
+  },
+  "0192": {
+    "code": "0192",
+    "description": "Level II"
+  },
+  "0193": {
+    "code": "0193",
+    "description": "Level III"
+  },
+  "0194": {
+    "code": "0194",
+    "description": "Level IV"
+  },
+  "0199": {
+    "code": "0199",
+    "description": "Other sub-acute care"
+  },
+  "0200": {
+    "code": "0200",
+    "description": "Intensive Care"
+  },
+  "0201": {
+    "code": "0201",
+    "description": "Surgical"
+  },
+  "0202": {
+    "code": "0202",
+    "description": "Medical"
+  },
+  "0203": {
+    "code": "0203",
+    "description": "Pediatric"
+  },
+  "0204": {
+    "code": "0204",
+    "description": "Psychiatric"
+  },
+  "0206": {
+    "code": "0206",
+    "description": "Intermediate ICU"
+  },
+  "0207": {
+    "code": "0207",
+    "description": "Burn care"
+  },
+  "0208": {
+    "code": "0208",
+    "description": "Trauma"
+  },
+  "0209": {
+    "code": "0209",
+    "description": "Other"
+  },
+  "0210": {
+    "code": "0210",
+    "description": "Coronary Care"
+  },
+  "0211": {
+    "code": "0211",
+    "description": "Myocardial infarction"
+  },
+  "0212": {
+    "code": "0212",
+    "description": "Pulmonary care"
+  },
+  "0213": {
+    "code": "0213",
+    "description": "Heart transplant"
+  },
+  "0214": {
+    "code": "0214",
+    "description": "Intermediate critical care unit (CCU)"
+  },
+  "0219": {
+    "code": "0219",
+    "description": "Other"
+  },
+  "0220": {
+    "code": "0220",
+    "description": "Special Charges"
+  },
+  "0221": {
+    "code": "0221",
+    "description": "Admission"
+  },
+  "0222": {
+    "code": "0222",
+    "description": "Technical support"
+  },
+  "0223": {
+    "code": "0223",
+    "description": "UR service"
+  },
+  "0224": {
+    "code": "0224",
+    "description": "Late discharge – medically necessary"
+  },
+  "0229": {
+    "code": "0229",
+    "description": "Other"
+  },
+  "0230": {
+    "code": "0230",
+    "description": "Incremental Nursing Charge Rate"
+  },
+  "0231": {
+    "code": "0231",
+    "description": "Nursery"
+  },
+  "0232": {
+    "code": "0232",
+    "description": "Obstetrics (OB)"
+  },
+  "0233": {
+    "code": "0233",
+    "description": "Intensive care unit (ICU)"
+  },
+  "0234": {
+    "code": "0234",
+    "description": "Critical care unit (CCU)"
+  },
+  "0235": {
+    "code": "0235",
+    "description": "Hospice"
+  },
+  "0239": {
+    "code": "0239",
+    "description": "Other"
+  },
+  "0240": {
+    "code": "0240",
+    "description": "All-Inclusive Ancillary – General"
+  },
+  "0241": {
+    "code": "0241",
+    "description": "Basic"
+  },
+  "0242": {
+    "code": "0242",
+    "description": "Comprehensive"
+  },
+  "0243": {
+    "code": "0243",
+    "description": "Specialty"
+  },
+  "0249": {
+    "code": "0249",
+    "description": "Other"
+  },
+  "0250": {
+    "code": "0250",
+    "description": "Pharmacy"
+  },
+  "0251": {
+    "code": "0251",
+    "description": "Generic drugs"
+  },
+  "0252": {
+    "code": "0252",
+    "description": "Non-generic drugs"
+  },
+  "0253": {
+    "code": "0253",
+    "description": "Take home drugs"
+  },
+  "0254": {
+    "code": "0254",
+    "description": "Incident to other diagnostic services"
+  },
+  "0255": {
+    "code": "0255",
+    "description": "Incident to radiology"
+  },
+  "0256": {
+    "code": "0256",
+    "description": "Experimental drugs"
+  },
+  "0257": {
+    "code": "0257",
+    "description": "Non-Rx"
+  },
+  "0258": {
+    "code": "0258",
+    "description": "IV solutions"
+  },
+  "0259": {
+    "code": "0259",
+    "description": "Other"
+  },
+  "0260": {
+    "code": "0260",
+    "description": "IV Therapy"
+  },
+  "0261": {
+    "code": "0261",
+    "description": "Infusion pump"
+  },
+  "0262": {
+    "code": "0262",
+    "description": "IV therapy/pharmacy services"
+  },
+  "0263": {
+    "code": "0263",
+    "description": "IV therapy/drug/supply delivery"
+  },
+  "0264": {
+    "code": "0264",
+    "description": "IV therapy/supplies"
+  },
+  "0269": {
+    "code": "0269",
+    "description": "Other"
+  },
+  "0270": {
+    "code": "0270",
+    "description": "Medical/Surgical Supplies and Devices"
+  },
+  "0271": {
+    "code": "0271",
+    "description": "Non-sterile supplies"
+  },
+  "0272": {
+    "code": "0272",
+    "description": "Sterile supplies"
+  },
+  "0273": {
+    "code": "0273",
+    "description": "Take-home supplies"
+  },
+  "0274": {
+    "code": "0274",
+    "description": "Prosthetic/orthotic devices"
+  },
+  "0275": {
+    "code": "0275",
+    "description": "Pacemaker"
+  },
+  "0276": {
+    "code": "0276",
+    "description": "Intraocular lens"
+  },
+  "0277": {
+    "code": "0277",
+    "description": "Oxygen – take home"
+  },
+  "0278": {
+    "code": "0278",
+    "description": "Other implants"
+  },
+  "0279": {
+    "code": "0279",
+    "description": "Other supplies/devices"
+  },
+  "0280": {
+    "code": "0280",
+    "description": "Oncology"
+  },
+  "0289": {
+    "code": "0289",
+    "description": "Other oncology"
+  },
+  "0290": {
+    "code": "0290",
+    "description": "Durable Medical Equipment (not renal)"
+  },
+  "0291": {
+    "code": "0291",
+    "description": "Rental"
+  },
+  "0292": {
+    "code": "0292",
+    "description": "Purchase – new equipment"
+  },
+  "0293": {
+    "code": "0293",
+    "description": "Purchase – used equipment"
+  },
+  "0294": {
+    "code": "0294",
+    "description": "Supplies/drugs for DME (HHA only)"
+  },
+  "0299": {
+    "code": "0299",
+    "description": "Other equipment"
+  },
+  "0300": {
+    "code": "0300",
+    "description": "Laboratory"
+  },
+  "0301": {
+    "code": "0301",
+    "description": "Chemistry"
+  },
+  "0302": {
+    "code": "0302",
+    "description": "Immunology"
+  },
+  "0303": {
+    "code": "0303",
+    "description": "Renal patient (home)"
+  },
+  "0304": {
+    "code": "0304",
+    "description": "Non-routine dialysis"
+  },
+  "0305": {
+    "code": "0305",
+    "description": "Hematology"
+  },
+  "0306": {
+    "code": "0306",
+    "description": "Bacteriology and microbiology"
+  },
+  "0307": {
+    "code": "0307",
+    "description": "Urology"
+  },
+  "0309": {
+    "code": "0309",
+    "description": "Other"
+  },
+  "0310": {
+    "code": "0310",
+    "description": "Laboratory - Pathology"
+  },
+  "0311": {
+    "code": "0311",
+    "description": "Cytology"
+  },
+  "0312": {
+    "code": "0312",
+    "description": "Histology"
+  },
+  "0314": {
+    "code": "0314",
+    "description": "Biopsy"
+  },
+  "0319": {
+    "code": "0319",
+    "description": "Other"
+  },
+  "0320": {
+    "code": "0320",
+    "description": "Radiology - Diagnostic"
+  },
+  "0321": {
+    "code": "0321",
+    "description": "Angiocardiography"
+  },
+  "0323": {
+    "code": "0323",
+    "description": "Arthrography"
+  },
+  "0324": {
+    "code": "0324",
+    "description": "Arteriography"
+  },
+  "0324": {
+    "code": "0324",
+    "description": "Chest X-ray"
+  },
+  "0329": {
+    "code": "0329",
+    "description": "Other"
+  },
+  "0330": {
+    "code": "0330",
+    "description": "Radiology - Therapeutic and/or Chemotherapy Administration"
+  },
+  "0331": {
+    "code": "0331",
+    "description": "Chemotherapy – injected"
+  },
+  "0332": {
+    "code": "0332",
+    "description": "Chemotherapy – oral"
+  },
+  "0333": {
+    "code": "0333",
+    "description": "Radiation therapy"
+  },
+  "0335": {
+    "code": "0335",
+    "description": "Chemotherapy – IV"
+  },
+  "0339": {
+    "code": "0339",
+    "description": "Other"
+  },
+  "0340": {
+    "code": "0340",
+    "description": "Nuclear Medicine"
+  },
+  "0341": {
+    "code": "0341",
+    "description": "Diagnostic"
+  },
+  "0342": {
+    "code": "0342",
+    "description": "Therapeutic"
+  },
+  "0343": {
+    "code": "0343",
+    "description": "Diagnostic radiopharmaceuticals"
+  },
+  "0344": {
+    "code": "0344",
+    "description": "Therapeutic radiopharmaceuticals"
+  },
+  "0349": {
+    "code": "0349",
+    "description": "Other"
+  },
+  "0350": {
+    "code": "0350",
+    "description": "Computerized Tomography (CT Scan)"
+  },
+  "0351": {
+    "code": "0351",
+    "description": "Head scan"
+  },
+  "0352": {
+    "code": "0352",
+    "description": "Body scan"
+  },
+  "0359": {
+    "code": "0359",
+    "description": "Other CT scans"
+  },
+  "0350": {
+    "code": "0350",
+    "description": "Computerized Tomography (CT Scan)"
+  },
+  "0351": {
+    "code": "0351",
+    "description": "Head scan"
+  },
+  "0352": {
+    "code": "0352",
+    "description": "Body scan"
+  },
+  "0359": {
+    "code": "0359",
+    "description": "Other CT scans"
+  },
+  "0360": {
+    "code": "0360",
+    "description": "Operating Room Services"
+  },
+  "0361": {
+    "code": "0361",
+    "description": "Minor surgery"
+  },
+  "0362": {
+    "code": "0362",
+    "description": "Organ transplant",
+    "description": " not kidney"
+  },
+  "0367": {
+    "code": "0367",
+    "description": "Kidney transplant"
+  },
+  "0369": {
+    "code": "0369",
+    "description": "Other"
+  },
+  "0370": {
+    "code": "0370",
+    "description": "Anesthesia"
+  },
+  "0371": {
+    "code": "0371",
+    "description": "Incident to radiology"
+  },
+  "0372": {
+    "code": "0372",
+    "description": "Incident to other diagnostic services"
+  },
+  "0374": {
+    "code": "0374",
+    "description": "Acupuncture"
+  },
+  "0379": {
+    "code": "0379",
+    "description": "Other"
+  },
+  "0380": {
+    "code": "0380",
+    "description": "Blood"
+  },
+  "0381": {
+    "code": "0381",
+    "description": "Packed red cells"
+  },
+  "0382": {
+    "code": "0382",
+    "description": "Whole blood"
+  },
+  "0383": {
+    "code": "0383",
+    "description": "Plasma"
+  },
+  "0384": {
+    "code": "0384",
+    "description": "Platelets"
+  },
+  "0385": {
+    "code": "0385",
+    "description": "Leukocytes"
+  },
+  "0386": {
+    "code": "0386",
+    "description": "Other components"
+  },
+  "0387": {
+    "code": "0387",
+    "description": "Other derivatives (cryoprecipitates)"
+  },
+  "0389": {
+    "code": "0389",
+    "description": "Other"
+  },
+  "0390": {
+    "code": "0390",
+    "description": "Blood Storage/Processing"
+  },
+  "0391": {
+    "code": "0391",
+    "description": "Blood administration"
+  },
+  "0392": {
+    "code": "0392",
+    "description": "Processing and storage"
+  },
+  "0399": {
+    "code": "0399",
+    "description": "Other blood handling"
+  },
+  "0400": {
+    "code": "0400",
+    "description": "Other Imaging Services"
+  },
+  "0401": {
+    "code": "0401",
+    "description": "Diagnostic mammography"
+  },
+  "0402": {
+    "code": "0402",
+    "description": "Ultrasound"
+  },
+  "0403": {
+    "code": "0403",
+    "description": "Screening mammography"
+  },
+  "0404": {
+    "code": "0404",
+    "description": "Positron emission tomography (PET scan)"
+  },
+  "0409": {
+    "code": "0409",
+    "description": "Other imaging services"
+  },
+  "0410": {
+    "code": "0410",
+    "description": "Respiratory Services"
+  },
+  "0412": {
+    "code": "0412",
+    "description": "Inhalation therapy"
+  },
+  "0413": {
+    "code": "0413",
+    "description": "Hyperbaric oxygen therapy"
+  },
+  "0419": {
+    "code": "0419",
+    "description": "Other"
+  },
+  "0420": {
+    "code": "0420",
+    "description": "Physical Therapy"
+  },
+  "0421": {
+    "code": "0421",
+    "description": "Visit charge"
+  },
+  "0422": {
+    "code": "0422",
+    "description": "Hourly charge"
+  },
+  "0423": {
+    "code": "0423",
+    "description": "Group rate"
+  },
+  "0424": {
+    "code": "0424",
+    "description": "Evaluation or re-evaluation"
+  },
+  "0429": {
+    "code": "0429",
+    "description": "Other"
+  },
+  "0430": {
+    "code": "0430",
+    "description": "Occupational Therapy"
+  },
+  "0431": {
+    "code": "0431",
+    "description": "Visit charge"
+  },
+  "0432": {
+    "code": "0432",
+    "description": "Hourly charge"
+  },
+  "0433": {
+    "code": "0433",
+    "description": "Group rate"
+  },
+  "0434": {
+    "code": "0434",
+    "description": "Evaluation or re-evaluation"
+  },
+  "0439": {
+    "code": "0439",
+    "description": "Other"
+  },
+  "0440": {
+    "code": "0440",
+    "description": "Speech Therapy – Language Pathology"
+  },
+  "0441": {
+    "code": "0441",
+    "description": "Visit charge"
+  },
+  "0442": {
+    "code": "0442",
+    "description": "Hourly charge"
+  },
+  "0443": {
+    "code": "0443",
+    "description": "Group rate"
+  },
+  "0444": {
+    "code": "0444",
+    "description": "Evaluation or re-evaluation"
+  },
+  "0449": {
+    "code": "0449",
+    "description": "Other"
+  },
+  "0450": {
+    "code": "0450",
+    "description": "Emergency Room (ER)"
+  },
+  "0451": {
+    "code": "0451",
+    "description": "EMTALA emergency medical screening"
+  },
+  "0452": {
+    "code": "0452",
+    "description": "ER beyond EMTALA screening"
+  },
+  "0456": {
+    "code": "0456",
+    "description": "Urgent Care"
+  },
+  "0459": {
+    "code": "0459",
+    "description": "Other emergency room"
+  },
+  "0460": {
+    "code": "0460",
+    "description": "Pulmonary Function"
+  },
+  "0469": {
+    "code": "0469",
+    "description": "Other pulmonary function"
+  },
+  "0470": {
+    "code": "0470",
+    "description": "Audiology"
+  },
+  "0471": {
+    "code": "0471",
+    "description": "Diagnostic"
+  },
+  "0472": {
+    "code": "0472",
+    "description": "Treatment"
+  },
+  "0479": {
+    "code": "0479",
+    "description": "Other"
+  },
+  "0480": {
+    "code": "0480",
+    "description": "Cardiology"
+  },
+  "0481": {
+    "code": "0481",
+    "description": "Cardiac catheter lab"
+  },
+  "0482": {
+    "code": "0482",
+    "description": "Stress test"
+  },
+  "0483": {
+    "code": "0483",
+    "description": "Echocardiography"
+  },
+  "0489": {
+    "code": "0489",
+    "description": "Other"
+  },
+  "0490": {
+    "code": "0490",
+    "description": "Ambulatory Surgical Care"
+  },
+  "0499": {
+    "code": "0499",
+    "description": "Other"
+  },
+  "0500": {
+    "code": "0500",
+    "description": "Outpatient Services"
+  },
+  "0509": {
+    "code": "0509",
+    "description": "Other"
+  },
+  "0510": {
+    "code": "0510",
+    "description": "Clinic"
+  },
+  "0511": {
+    "code": "0511",
+    "description": "Chronic pain center"
+  },
+  "0512": {
+    "code": "0512",
+    "description": "Dental clinic"
+  },
+  "0513": {
+    "code": "0513",
+    "description": "Psychiatric clinic"
+  },
+  "0514": {
+    "code": "0514",
+    "description": "OB/Gyn clinic"
+  },
+  "0515": {
+    "code": "0515",
+    "description": "Pediatric clinic"
+  },
+  "0516": {
+    "code": "0516",
+    "description": "Urgent care clinic"
+  },
+  "0517": {
+    "code": "0517",
+    "description": "Family practice clinic"
+  },
+  "0519": {
+    "code": "0519",
+    "description": "Other clinic"
+  },
+  "0520": {
+    "code": "0520",
+    "description": "Free-Standing Clinic"
+  },
+  "0521": {
+    "code": "0521",
+    "description": "Rural health clinic"
+  },
+  "0522": {
+    "code": "0522",
+    "description": "Rural health – home"
+  },
+  "0523": {
+    "code": "0523",
+    "description": "Family practice clinic"
+  },
+  "0524": {
+    "code": "0524",
+    "description": "Rural Health Family Clinic"
+  },
+  "0525": {
+    "code": "0525",
+    "description": "Rural Health – other residential facility"
+  },
+  "0526": {
+    "code": "0526",
+    "description": "Urgent care clinic"
+  },
+  "0527": {
+    "code": "0527",
+    "description": "Rural Health – visiting nurse"
+  },
+  "0528": {
+    "code": "0528",
+    "description": "Rural Health – other site"
+  },
+  "0529": {
+    "code": "0529",
+    "description": "Other freestanding clinic"
+  },
+  "0530": {
+    "code": "0530",
+    "description": "Osteopathic Services"
+  },
+  "0531": {
+    "code": "0531",
+    "description": "Osteopathic therapy"
+  },
+  "0539": {
+    "code": "0539",
+    "description": "Other"
+  },
+  "0540": {
+    "code": "0540",
+    "description": "Ambulance"
+  },
+  "0541": {
+    "code": "0541",
+    "description": "Supplies"
+  },
+  "0542": {
+    "code": "0542",
+    "description": "Medical transport"
+  },
+  "0543": {
+    "code": "0543",
+    "description": "Heart mobile"
+  },
+  "0544": {
+    "code": "0544",
+    "description": "Oxygen"
+  },
+  "0545": {
+    "code": "0545",
+    "description": "Air ambulance"
+  },
+  "0546": {
+    "code": "0546",
+    "description": "Neonatal ambulance services"
+  },
+  "0547": {
+    "code": "0547",
+    "description": "Pharmacy"
+  },
+  "0548": {
+    "code": "0548",
+    "description": "Telephone transmission EKG"
+  },
+  "0549": {
+    "code": "0549",
+    "description": "Other (ALS)"
+  },
+  "0550": {
+    "code": "0550",
+    "description": "Skilled Nursing"
+  },
+  "0551": {
+    "code": "0551",
+    "description": "Visit charge"
+  },
+  "0552": {
+    "code": "0552",
+    "description": "Hourly charge"
+  },
+  "0559": {
+    "code": "0559",
+    "description": "Other"
+  },
+  "0560": {
+    "code": "0560",
+    "description": "Home Health - Medical Social Services"
+  },
+  "0561": {
+    "code": "0561",
+    "description": "Visit charge"
+  },
+  "0562": {
+    "code": "0562",
+    "description": "Hourly charge"
+  },
+  "0569": {
+    "code": "0569",
+    "description": "Other"
+  },
+  "0570": {
+    "code": "0570",
+    "description": "Home Health Aide"
+  },
+  "0571": {
+    "code": "0571",
+    "description": "Visit charge"
+  },
+  "0572": {
+    "code": "0572",
+    "description": "Hourly charge"
+  },
+  "0579": {
+    "code": "0579",
+    "description": "Other"
+  },
+  "0580": {
+    "code": "0580",
+    "description": "Other Visits (Home Health)"
+  },
+  "0581": {
+    "code": "0581",
+    "description": "Visit charge"
+  },
+  "0582": {
+    "code": "0582",
+    "description": "Hourly charge"
+  },
+  "0589": {
+    "code": "0589",
+    "description": "Other"
+  },
+  "0590": {
+    "code": "0590",
+    "description": "Units of Service (Home Health)"
+  },
+  "0600": {
+    "code": "0600",
+    "description": "Oxygen (Home Health)"
+  },
+  "0601": {
+    "code": "0601",
+    "description": "Oxygen – state/equip/suppt/or cont"
+  },
+  "0602": {
+    "code": "0602",
+    "description": "Oxygen – state/equip/under 1 LPM"
+  },
+  "0603": {
+    "code": "0603",
+    "description": "Oxygen – state/equip/over 4 LPM"
+  },
+  "0604": {
+    "code": "0604",
+    "description": "Oxygen – portable add-on"
+  },
+  "0609": {
+    "code": "0609",
+    "description": "Other"
+  },
+  "0610": {
+    "code": "0610",
+    "description": "Magnetic Resonance Imaging (MRI)"
+  },
+  "0611": {
+    "code": "0611",
+    "description": "MRI brain (including brain stem)"
+  },
+  "0612": {
+    "code": "0612",
+    "description": "MRI spinal cord (including spine)"
+  },
+  "0614": {
+    "code": "0614",
+    "description": "MRI – other"
+  },
+  "0615": {
+    "code": "0615",
+    "description": "MRA – head and neck"
+  },
+  "0616": {
+    "code": "0616",
+    "description": "MRA – lower extremities"
+  },
+  "0618": {
+    "code": "0618",
+    "description": "MRA – other"
+  },
+  "0619": {
+    "code": "0619",
+    "description": "Other"
+  },
+  "0620": {
+    "code": "0620",
+    "description": "Medical/Surgical Supplies - Extension of 270"
+  },
+  "0621": {
+    "code": "0621",
+    "description": "Supplies incident to radiology"
+  },
+  "0622": {
+    "code": "0622",
+    "description": "Supplies incident to other diagnostic services"
+  },
+  "0623": {
+    "code": "0623",
+    "description": "Surgical dressings"
+  },
+  "0624": {
+    "code": "0624",
+    "description": "FDA investigational devices"
+  },
+  "0630": {
+    "code": "0630",
+    "description": "Drugs Requiring Specification Identification"
+  },
+  "0631": {
+    "code": "0631",
+    "description": "Single source drug"
+  },
+  "0632": {
+    "code": "0632",
+    "description": "Multiple source drug"
+  },
+  "0633": {
+    "code": "0633",
+    "description": "Restrictive prescription"
+  },
+  "0634": {
+    "code": "0634",
+    "description": "Erythropoietin (EPO) less than 10,000 units"
+  },
+  "0635": {
+    "code": "0635",
+    "description": "Erythropoietin (EPO) greater than 10,000 units"
+  },
+  "0636": {
+    "code": "0636",
+    "description": "Drugs requiring detailed coding"
+  },
+  "0637": {
+    "code": "0637",
+    "description": "Self-administrable drugs"
+  },
+  "0640": {
+    "code": "0640",
+    "description": "Home IV Therapy Services"
+  },
+  "0641": {
+    "code": "0641",
+    "description": "Non-routine nursing/central line"
+  },
+  "0642": {
+    "code": "0642",
+    "description": "IV site care, central line"
+  },
+  "0643": {
+    "code": "0643",
+    "description": "IV start/care/peripheral line"
+  },
+  "0644": {
+    "code": "0644",
+    "description": "Non-routine nursing/peripheral line"
+  },
+  "0645": {
+    "code": "0645",
+    "description": "Training patient/caregiver/central line"
+  },
+  "0646": {
+    "code": "0646",
+    "description": "Training disabled patient/central line"
+  },
+  "0647": {
+    "code": "0647",
+    "description": "Training patient/caregiver/peripheral line"
+  },
+  "0648": {
+    "code": "0648",
+    "description": "Training disabled patient/peripheral line"
+  },
+  "0649": {
+    "code": "0649",
+    "description": "Other"
+  },
+  "0650": {
+    "code": "0650",
+    "description": "Hospice"
+  },
+  "0651": {
+    "code": "0651",
+    "description": "Routine home care"
+  },
+  "0652": {
+    "code": "0652",
+    "description": "Continuous home care"
+  },
+  "0655": {
+    "code": "0655",
+    "description": "Inpatient respite care"
+  },
+  "0656": {
+    "code": "0656",
+    "description": "General inpatient care (non-respite)"
+  },
+  "0657": {
+    "code": "0657",
+    "description": "Physician services"
+  },
+  "0658": {
+    "code": "0658",
+    "description": "Hospice R&B Nursing Facility"
+  },
+  "0659": {
+    "code": "0659",
+    "description": "Other"
+  },
+  "0660": {
+    "code": "0660",
+    "description": "General Respite Care (Home Health Only)"
+  },
+  "0661": {
+    "code": "0661",
+    "description": "Hourly charge/skilled nursing"
+  },
+  "0662": {
+    "code": "0662",
+    "description": "Hourly charge/home health aide/homemaker/companion"
+  },
+  "0633": {
+    "code": "0633",
+    "description": "Daily Respite Charge"
+  },
+  "0669": {
+    "code": "0669",
+    "description": "Other Respite"
+  },
+  "0670": {
+    "code": "0670",
+    "description": "Outpatient Special Residence Charges"
+  },
+  "0671": {
+    "code": "0671",
+    "description": "Hospital owned"
+  },
+  "0672": {
+    "code": "0672",
+    "description": "Contracted"
+  },
+  "0679": {
+    "code": "0679",
+    "description": "Other special residence charges"
+  },
+  "0680": {
+    "code": "0680",
+    "description": "Trauma Response"
+  },
+  "0681": {
+    "code": "0681",
+    "description": "Level I Trauma"
+  },
+  "0682": {
+    "code": "0682",
+    "description": "Level II Trauma"
+  },
+  "0683": {
+    "code": "0683",
+    "description": "Level III Trauma"
+  },
+  "0684": {
+    "code": "0684",
+    "description": "Level IV Trauma"
+  },
+  "0689": {
+    "code": "0689",
+    "description": "Other"
+  },
+  "0700": {
+    "code": "0700",
+    "description": "Cast Room"
+  },
+  "0710": {
+    "code": "0710",
+    "description": "Recovery Room"
+  },
+  "0720": {
+    "code": "0720",
+    "description": "Labor Room/Delivery"
+  },
+  "0721": {
+    "code": "0721",
+    "description": "Labor"
+  },
+  "0722": {
+    "code": "0722",
+    "description": "Delivery"
+  },
+  "0723": {
+    "code": "0723",
+    "description": "Circumcision"
+  },
+  "0724": {
+    "code": "0724",
+    "description": "Birthing center"
+  },
+  "0729": {
+    "code": "0729",
+    "description": "Other"
+  },
+  "0730": {
+    "code": "0730",
+    "description": "EKG/ECG (Electrocardiogram)"
+  },
+  "0731": {
+    "code": "0731",
+    "description": "Holter monitor"
+  },
+  "0732": {
+    "code": "0732",
+    "description": "Telemetry"
+  },
+  "0739": {
+    "code": "0739",
+    "description": "Other"
+  },
+  "0740": {
+    "code": "0740",
+    "description": "EEG (Electroencephalogram)"
+  },
+  "0750": {
+    "code": "0750",
+    "description": "Gastrointestinal"
+  },
+  "0760": {
+    "code": "0760",
+    "description": "Treatment or Observation Room"
+  },
+  "0761": {
+    "code": "0761",
+    "description": "Treatment room"
+  },
+  "0762": {
+    "code": "0762",
+    "description": "Observation room"
+  },
+  "0769": {
+    "code": "0769",
+    "description": "Other specialty rooms"
+  },
+  "0770": {
+    "code": "0770",
+    "description": "Preventive Care Services"
+  },
+  "0771": {
+    "code": "0771",
+    "description": "Vaccine administration"
+  },
+  "0780": {
+    "code": "0780",
+    "description": "Telemedicine"
+  },
+  "0790": {
+    "code": "0790",
+    "description": "Extra-Corporeal Shock Wave Therapy"
+  },
+  "0800": {
+    "code": "0800",
+    "description": "Inpatient Renal Dialysis"
+  },
+  "0801": {
+    "code": "0801",
+    "description": "Hemodialysis"
+  },
+  "0802": {
+    "code": "0802",
+    "description": "Peritoneal dialysis (non-CAPD)"
+  },
+  "0803": {
+    "code": "0803",
+    "description": "Continuous ambulatory peritoneal dialysis (CAPD)"
+  },
+  "0804": {
+    "code": "0804",
+    "description": "Continuous cycling peritoneal dialysis (CCPD)"
+  },
+  "0809": {
+    "code": "0809",
+    "description": "Other"
+  },
+  "0810": {
+    "code": "0810",
+    "description": "Organ Acquisition"
+  },
+  "0811": {
+    "code": "0811",
+    "description": "Living donor"
+  },
+  "0812": {
+    "code": "0812",
+    "description": "Cadaver donor"
+  },
+  "0813": {
+    "code": "0813",
+    "description": "Unknown donor"
+  },
+  "0814": {
+    "code": "0814",
+    "description": "Unsuccessful organ search – donor bank charges"
+  },
+  "0819": {
+    "code": "0819",
+    "description": "Other donor"
+  },
+  "0820": {
+    "code": "0820",
+    "description": "Hemodialysis Outpatient or Home"
+  },
+  "0821": {
+    "code": "0821",
+    "description": "Hemodialysis – composite or other rate"
+  },
+  "0822": {
+    "code": "0822",
+    "description": "Home supplies"
+  },
+  "0823": {
+    "code": "0823",
+    "description": "Home equipment"
+  },
+  "0824": {
+    "code": "0824",
+    "description": "Maintenance – 100%"
+  },
+  "0825": {
+    "code": "0825",
+    "description": "Support services"
+  },
+  "0829": {
+    "code": "0829",
+    "description": "Other"
+  },
+  "0830": {
+    "code": "0830",
+    "description": "Peritoneal Dialysis Outpatient or Home"
+  },
+  "0831": {
+    "code": "0831",
+    "description": "Peritoneal dialysis – composite or other rate"
+  },
+  "0832": {
+    "code": "0832",
+    "description": "Home supplies"
+  },
+  "0833": {
+    "code": "0833",
+    "description": "Home equipment"
+  },
+  "0834": {
+    "code": "0834",
+    "description": "Maintenance – 100%"
+  },
+  "0835": {
+    "code": "0835",
+    "description": "Support services"
+  },
+  "0839": {
+    "code": "0839",
+    "description": "Other"
+  },
+  "0840": {
+    "code": "0840",
+    "description": "CAPD (Dialysis) Outpatient or Home"
+  },
+  "0841": {
+    "code": "0841",
+    "description": "CAPD - composite or other rate"
+  },
+  "0842": {
+    "code": "0842",
+    "description": "Home supplies"
+  },
+  "0843": {
+    "code": "0843",
+    "description": "Home equipment"
+  },
+  "0844": {
+    "code": "0844",
+    "description": "Maintenance – 100%"
+  },
+  "0845": {
+    "code": "0845",
+    "description": "Support services"
+  },
+  "0849": {
+    "code": "0849",
+    "description": "Other"
+  },
+  "0850": {
+    "code": "0850",
+    "description": "CCPD (Dialysis) Outpatient or Home"
+  },
+  "0851": {
+    "code": "0851",
+    "description": "CCPD – composite or other rate"
+  },
+  "0852": {
+    "code": "0852",
+    "description": "Home supplies"
+  },
+  "0853": {
+    "code": "0853",
+    "description": "Home equipment"
+  },
+  "0854": {
+    "code": "0854",
+    "description": "Maintenance – 100%"
+  },
+  "0855": {
+    "code": "0855",
+    "description": "Support services"
+  },
+  "0859": {
+    "code": "0859",
+    "description": "Other"
+  },
+  "0880": {
+    "code": "0880",
+    "description": "Miscellaneous Dialysis"
+  },
+  "0881": {
+    "code": "0881",
+    "description": "Ultra-filtration"
+  },
+  "0882": {
+    "code": "0882",
+    "description": "Home dialysis aid visit"
+  },
+  "0889": {
+    "code": "0889",
+    "description": "Other"
+  },
+  "0900": {
+    "code": "0900",
+    "description": "Behavioral Health Treatment"
+  },
+  "0901": {
+    "code": "0901",
+    "description": "Electroshock treatment"
+  },
+  "0902": {
+    "code": "0902",
+    "description": "Milieu therapy"
+  },
+  "0903": {
+    "code": "0903",
+    "description": "Play therapy"
+  },
+  "0904": {
+    "code": "0904",
+    "description": "Activity therapy"
+  },
+  "0905": {
+    "code": "0905",
+    "description": "Intensive outpatient services – psychiatric"
+  },
+  "0906": {
+    "code": "0906",
+    "description": "Intensive outpatient services – chemical dependency"
+  },
+  "0907": {
+    "code": "0907",
+    "description": "Community Behavioral Health Program (Day Treatment"
+  },
+  "0910": {
+    "code": "0910",
+    "description": "Behavioral Health Treatment - Reserved"
+  },
+  "0911": {
+    "code": "0911",
+    "description": "Rehabilitation"
+  },
+  "0912": {
+    "code": "0912",
+    "description": "Partial hospitalization – less intensive"
+  },
+  "0913": {
+    "code": "0913",
+    "description": "Partial hospitalization – intensive"
+  },
+  "0914": {
+    "code": "0914",
+    "description": "Individual therapy"
+  },
+  "0915": {
+    "code": "0915",
+    "description": "Group therapy"
+  },
+  "0916": {
+    "code": "0916",
+    "description": "Family therapy"
+  },
+  "0917": {
+    "code": "0917",
+    "description": "Biofeedback"
+  },
+  "0918": {
+    "code": "0918",
+    "description": "Testing"
+  },
+  "0919": {
+    "code": "0919",
+    "description": "Other"
+  },
+  "0920": {
+    "code": "0920",
+    "description": "Other Diagnostic Services"
+  },
+  "0921": {
+    "code": "0921",
+    "description": "Peripheral vascular lab"
+  },
+  "0922": {
+    "code": "0922",
+    "description": "Electromyelgram"
+  },
+  "0923": {
+    "code": "0923",
+    "description": "Pap smear"
+  },
+  "0924": {
+    "code": "0924",
+    "description": "Allergy test"
+  },
+  "0925": {
+    "code": "0925",
+    "description": "Pregnancy test"
+  },
+  "0929": {
+    "code": "0929",
+    "description": "Other diagnostic service"
+  },
+  "0930": {
+    "code": "0930",
+    "description": "Medical rehab day program-Reserved"
+  },
+  "0931": {
+    "code": "0931",
+    "description": "Medical rehab day program – half-day"
+  },
+  "0932": {
+    "code": "0932",
+    "description": "Medical rehab day program – full-day"
+  },
+  "0940": {
+    "code": "0940",
+    "description": "Other Therapeutic Services"
+  },
+  "0941": {
+    "code": "0941",
+    "description": "Recreational therapy"
+  },
+  "0942": {
+    "code": "0942",
+    "description": "Education/training"
+  },
+  "0943": {
+    "code": "0943",
+    "description": "Cardiac rehabilitation"
+  },
+  "0944": {
+    "code": "0944",
+    "description": "Drug rehabilitation"
+  },
+  "0945": {
+    "code": "0945",
+    "description": "Alcohol rehabilitation"
+  },
+  "0946": {
+    "code": "0946",
+    "description": "Complex medical equipment – routine"
+  },
+  "0947": {
+    "code": "0947",
+    "description": "Complex medical equipment – ancillary"
+  },
+  "0948": {
+    "code": "0948",
+    "description": "Pulmonary rehab"
+  },
+  "0949": {
+    "code": "0949",
+    "description": "Other therapeutic services"
+  },
+  "0950": {
+    "code": "0950",
+    "description": "Other therapeutic services – reserved"
+  },
+  "0951": {
+    "code": "0951",
+    "description": "Athletic training"
+  },
+  "0952": {
+    "code": "0952",
+    "description": "Kinesiotherapy"
+  },
+  "0960": {
+    "code": "0960",
+    "description": "Professional Fees"
+  },
+  "0961": {
+    "code": "0961",
+    "description": "Psychiatric"
+  },
+  "0962": {
+    "code": "0962",
+    "description": "Ophthalmology"
+  },
+  "0963": {
+    "code": "0963",
+    "description": "Anesthesia – MD"
+  },
+  "0970": {
+    "code": "0970",
+    "description": "Professional Fees - Reserved"
+  },
+  "0971": {
+    "code": "0971",
+    "description": "Laboratory"
+  },
+  "0972": {
+    "code": "0972",
+    "description": "Radiology – diagnostic"
+  },
+  "0973": {
+    "code": "0973",
+    "description": "Radiology – therapeutic"
+  },
+  "0974": {
+    "code": "0974",
+    "description": "Radiology – nuclear medicine"
+  },
+  "0975": {
+    "code": "0975",
+    "description": "Operating room"
+  },
+  "0976": {
+    "code": "0976",
+    "description": "Respiratory therapy"
+  },
+  "0977": {
+    "code": "0977",
+    "description": "Physical therapy"
+  },
+  "0978": {
+    "code": "0978",
+    "description": "Occupational therapy"
+  },
+  "0979": {
+    "code": "0979",
+    "description": "Speech therapy"
+  },
+  "0980": {
+    "code": "0980",
+    "description": "Professional Fees - Reserved"
+  },
+  "0981": {
+    "code": "0981",
+    "description": "Emergency room"
+  },
+  "0982": {
+    "code": "0982",
+    "description": "OPD"
+  },
+  "0983": {
+    "code": "0983",
+    "description": "Clinic"
+  },
+  "0984": {
+    "code": "0984",
+    "description": "Medical/social services"
+  },
+  "0985": {
+    "code": "0985",
+    "description": "Electrocardiogram (EKG)"
+  },
+  "0986": {
+    "code": "0986",
+    "description": "Electroencephalogram (EEG)"
+  },
+  "0987": {
+    "code": "0987",
+    "description": "Hospital visit"
+  },
+  "0988": {
+    "code": "0988",
+    "description": "Consultation"
+  },
+  "0989": {
+    "code": "0989",
+    "description": "Private duty nurse"
+  },
+  "0990": {
+    "code": "0990",
+    "description": "Patient Convenience Items"
+  },
+  "0991": {
+    "code": "0991",
+    "description": "Cafeteria/guest tray"
+  },
+  "0992": {
+    "code": "0992",
+    "description": "Private linen services"
+  },
+  "0993": {
+    "code": "0993",
+    "description": "Telephone/telegraph"
+  },
+  "0994": {
+    "code": "0994",
+    "description": "TV/radio"
+  },
+  "0995": {
+    "code": "0995",
+    "description": "Nonpatient room rentals"
+  },
+  "0996": {
+    "code": "0996",
+    "description": "Late discharge charge"
+  },
+  "0997": {
+    "code": "0997",
+    "description": "Admission kits"
+  },
+  "0998": {
+    "code": "0998",
+    "description": "Beauty shop/barber"
+  },
+  "0999": {
+    "code": "0999",
+    "description": "Other"
+  },
+  "1000": {
+    "code": "1000",
+    "description": "Behavioral Health Accommodations"
+  },
+  "1001": {
+    "code": "1001",
+    "description": "Residential treatment – psychiatric"
+  },
+  "1002": {
+    "code": "1002",
+    "description": "Residential treatment – chemical dependency"
+  },
+  "1003": {
+    "code": "1003",
+    "description": "Supervised living"
+  },
+  "1004": {
+    "code": "1004",
+    "description": "Halfway house"
+  },
+  "1005": {
+    "code": "1005",
+    "description": "Group home"
+  },
+  "2100": {
+    "code": "2100",
+    "description": "Alternative Therapy Services"
+  },
+  "2101": {
+    "code": "2101",
+    "description": "Acupuncture"
+  },
+  "2102": {
+    "code": "2102",
+    "description": "Acupressure"
+  },
+  "2103": {
+    "code": "2103",
+    "description": "Massage"
+  },
+  "2104": {
+    "code": "2104",
+    "description": "Reflexology"
+  },
+  "2105": {
+    "code": "2105",
+    "description": "Biofeedback"
+  },
+  "2106": {
+    "code": "2106",
+    "description": "Hypnosis"
+  },
+  "2109": {
+    "code": "2109",
+    "description": "Other alternative therapy services"
+  },
+  "3100": {
+    "code": "3100",
+    "description": "Adult Day Care - Reserved"
+  },
+  "3101": {
+    "code": "3101",
+    "description": "Adult day care medical social – hourly"
+  },
+  "3102": {
+    "code": "3102",
+    "description": "Adult day care social – hourly"
+  },
+  "3103": {
+    "code": "3103",
+    "description": "Adult day care medical social – daily"
+  },
+  "3104": {
+    "code": "3104",
+    "description": "Adult daycare social – daily"
+  },
+  "3105": {
+    "code": "3105",
+    "description": "Adult foster care – daily"
+  },
+  "3109": {
+    "code": "3109",
+    "description": "Other adult care"
+  },
+  "0964": {
+    "code": "0964",
+    "description": "Anesthesia – CRNA"
+  },
+  "0969": {
+    "code": "0969",
+    "description": "Other"
+  }
 }
