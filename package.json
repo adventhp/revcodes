@@ -2,7 +2,7 @@
   "name": "revcodes",
   "version": "1.0.0",
   "description": "Medical Billing revcodes",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/adventhp/revcodes/issues"
   },
-  "homepage": "https://github.com/adventhp/revcodes#readme"
+  "homepage": "https://github.com/adventhp/revcodes#readme",
+  "devDependencies": {
+    "prettier": "^1.13.5"
+  }
 }
