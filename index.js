@@ -1,6 +1,6 @@
 const CODES = require("./revcodes.json");
 
-exports.getAll = function() {
+function getAll() {
   return Object.keys(CODES).map(key => CODES[key]);
 };
 
@@ -12,6 +12,7 @@ function getMany(ids) {
 }
 
 module.export = {
+  getAll: getAll,
   getMany: getMany,
   getOne: getOne
 };
