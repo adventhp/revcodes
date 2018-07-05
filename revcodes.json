@@ -645,10 +645,6 @@
   },
   "0323": {
     "code": "0323",
-    "description": "Arthrography"
-  },
-  "0324": {
-    "code": "0324",
     "description": "Arteriography"
   },
   "0324": {
@@ -665,7 +661,7 @@
   },
   "0331": {
     "code": "0331",
-    "description": "Chemotherapy – injected"
+    "description": "Chemotherapy – injection"
   },
   "0332": {
     "code": "0332",
@@ -733,8 +729,7 @@
   },
   "0362": {
     "code": "0362",
-    "description": "Organ transplant",
-    "description": " not kidney"
+    "description": "Organ transplant - other than kidney"
   },
   "0367": {
     "code": "0367",
@@ -1396,8 +1391,8 @@
     "code": "0662",
     "description": "Hourly charge/home health aide/homemaker/companion"
   },
-  "0633": {
-    "code": "0633",
+  "0663": {
+    "code": "0663",
     "description": "Daily Respite Charge"
   },
   "0669": {
