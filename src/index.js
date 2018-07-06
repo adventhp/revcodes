@@ -1,18 +1,22 @@
 const CODES = require("../revcodes.json");
 
-function getAll() {
-  return Object.keys(CODES).map(key => CODES[key]);
+function formatCode(code) {
+  let formatted = code.toString();
+  while (formatted.length < 4) {
+    formatted = "0" + formatted;
+  }
+  return formatted;
+}
+
+exports.getAll = function() {
+  return Object.keys(CODES).map(key => CODES[ key ]);
 };
 
-function getOne(id) {
-  return CODES[id];
-}
-function getMany(ids) {
-  return ids.map(getOne);
-}
+exports.getOne = function(id) {
+  const code = formatCode(id);
+  return CODES[ code ];
+};
 
-module.export = {
-  getAll: getAll,
-  getMany: getMany,
-  getOne: getOne
+exports.getMany = function(ids) {
+  return ids.map(getOne);
 };
