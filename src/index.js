@@ -1,4 +1,4 @@
-const CODES = require("./revcodes.json");
+const CODES = require("../revcodes.json");
 
 function getAll() {
   return Object.keys(CODES).map(key => CODES[key]);
