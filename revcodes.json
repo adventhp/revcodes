@@ -509,7 +509,8 @@
   },
   "0270": {
     "code": "0270",
-    "description": "Medical/Surgical Supplies and Devices"
+    "description": "Medical/Surgical Supplies and Devices",
+    "alt": ["MS Supply General"]
   },
   "0271": {
     "code": "0271",
@@ -585,11 +586,13 @@
   },
   "0301": {
     "code": "0301",
-    "description": "Chemistry"
+    "description": "Chemistry",
+    "alt": ["Laboratory Chemistry"]
   },
   "0302": {
     "code": "0302",
-    "description": "Immunology"
+    "description": "Immunology",
+    "alt": ["Laboratory Immunology"]
   },
   "0303": {
     "code": "0303",
@@ -601,7 +604,8 @@
   },
   "0305": {
     "code": "0305",
-    "description": "Hematology"
+    "description": "Hematology",
+    "alt": ["Laboratory Hematology"]
   },
   "0306": {
     "code": "0306",
@@ -609,7 +613,8 @@
   },
   "0307": {
     "code": "0307",
-    "description": "Urology"
+    "description": "Urology",
+    "alt": ["Laboratory Urology"]
   },
   "0309": {
     "code": "0309",
@@ -621,15 +626,18 @@
   },
   "0311": {
     "code": "0311",
-    "description": "Cytology"
+    "description": "Cytology",
+    "alt": ["Laboratory Cytology"]
   },
   "0312": {
     "code": "0312",
-    "description": "Histology"
+    "description": "Histology",
+    "alt": ["Laboratory Histology"]
   },
   "0314": {
     "code": "0314",
-    "description": "Biopsy"
+    "description": "Biopsy",
+    "alt": ["Laboratory Biopsy"]
   },
   "0319": {
     "code": "0319",
@@ -721,7 +729,8 @@
   },
   "0360": {
     "code": "0360",
-    "description": "Operating Room Services"
+    "description": "Operating Room Services",
+    "alt": ["OR SVCS GENERAL"]
   },
   "0361": {
     "code": "0361",
@@ -869,7 +878,8 @@
   },
   "0424": {
     "code": "0424",
-    "description": "Evaluation or re-evaluation"
+    "description": "Evaluation or re-evaluation",
+    "alt": ["Physical Therapy Evaluate"]
   },
   "0429": {
     "code": "0429",
@@ -893,7 +903,8 @@
   },
   "0434": {
     "code": "0434",
-    "description": "Evaluation or re-evaluation"
+    "description": "Evaluation or re-evaluation",
+    "alt": ["Occup Therapy Evaluate"]
   },
   "0439": {
     "code": "0439",
