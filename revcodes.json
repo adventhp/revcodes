@@ -257,11 +257,13 @@
   },
   "0173": {
     "code": "0173",
-    "description": "Newborn – Level III"
+    "description": "Newborn – Level III",
+    "alt": ["Nursery/Level III"]
   },
   "0174": {
     "code": "0174",
-    "description": "Newborn – Level IV"
+    "description": "Newborn – Level IV",
+    "alt": ["Nursery/Level IV"]
   },
   "0179": {
     "code": "0179",
@@ -397,7 +399,8 @@
   },
   "0230": {
     "code": "0230",
-    "description": "Incremental Nursing Charge Rate"
+    "description": "Incremental Nursing Charge Rate",
+    "alt": ["NURSING INCREM"]
   },
   "0231": {
     "code": "0231",
@@ -510,7 +513,7 @@
   "0270": {
     "code": "0270",
     "description": "Medical/Surgical Supplies and Devices",
-    "alt": ["MS Supply General"]
+    "alt": ["MS Supply General", "M/S Supply General", "Med Sur Supplies"]
   },
   "0271": {
     "code": "0271",
@@ -582,7 +585,8 @@
   },
   "0300": {
     "code": "0300",
-    "description": "Laboratory"
+    "description": "Laboratory",
+    "alt": ["Laboratory or (Lab)"]
   },
   "0301": {
     "code": "0301",
@@ -609,7 +613,8 @@
   },
   "0306": {
     "code": "0306",
-    "description": "Bacteriology and microbiology"
+    "description": "Bacteriology and microbiology",
+    "alt": ["Lab/Bact-Micro"]
   },
   "0307": {
     "code": "0307",
@@ -645,7 +650,8 @@
   },
   "0320": {
     "code": "0320",
-    "description": "Radiology - Diagnostic"
+    "description": "Radiology - Diagnostic",
+    "alt": ["DX X-Ray"]
   },
   "0321": {
     "code": "0321",
@@ -879,7 +885,7 @@
   "0424": {
     "code": "0424",
     "description": "Evaluation or re-evaluation",
-    "alt": ["Physical Therapy Evaluate"]
+    "alt": ["Physical Therapy Evaluate", "Phys Therp/Eval"]
   },
   "0429": {
     "code": "0429",
@@ -968,7 +974,8 @@
   },
   "0471": {
     "code": "0471",
-    "description": "Diagnostic"
+    "description": "Diagnostic",
+    "alt": ["AUDIOLOGY DIAGNOSTIC"]
   },
   "0472": {
     "code": "0472",
@@ -1828,7 +1835,8 @@
   },
   "0940": {
     "code": "0940",
-    "description": "Other Therapeutic Services"
+    "description": "Other Therapeutic Services",
+    "alt": ["Other Therapeutic", "Other Rx Svs"]
   },
   "0941": {
     "code": "0941",
