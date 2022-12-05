@@ -1,6 +1,6 @@
 {
-  "name": "revcodes",
-  "version": "1.0.0",
+  "name": "@adventhp/revcodes",
+  "version": "1.0.1",
   "description": "Medical Billing revcodes",
   "main": "src/index.js",
   "scripts": {
